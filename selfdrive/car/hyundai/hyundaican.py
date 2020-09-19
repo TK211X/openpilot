@@ -159,13 +159,13 @@ def create_scc14(packer, enabled, usestockscc, aebcmdact, accel, scc14):
       if accel > 0.1:
         values["JerkUpperLimit"] = 1.2
         values["JerkLowerLimit"] = 10.
-        values["ComfortBandUpper"] = 0.
+        values["ComfortBandUpper"] = 4.
         values["ComfortBandLower"] = 0.
       elif accel < -0.1:
-        values["JerkUpperLimit"] = .5
+        values["JerkUpperLimit"] = 4.
         values["JerkLowerLimit"] = 30.
         values["ComfortBandUpper"] = 0.
-        values["ComfortBandLower"] = 0.
+        values["ComfortBandLower"] = 5.
       else:
         values["JerkUpperLimit"] = .5
         values["JerkLowerLimit"] = 1.
